@@ -6,6 +6,7 @@ div{
     text-align:center;
 }
 /*Estilo de la foto de perfil*/
+
 @media(min-width:576px){
     #fotodeperfil{
         position: absolute;
@@ -23,7 +24,7 @@ div{
         border-radius:100%;
         box-shadow: 3px 3px 3px grey;
         left:34%;
-        top:630px;
+        top:950px;
     }
 }
 @media(max-width:409px){
@@ -76,6 +77,7 @@ div{
         top:500px;
     }    
 }
+
 /*Etiqueta de nombre*/
 #nombre{
     font-weight: bold;
