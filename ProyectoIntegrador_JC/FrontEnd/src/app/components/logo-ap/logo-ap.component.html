@@ -9,7 +9,8 @@
             <a href="https://www.instagram.com/javier.carrere" target="_blank"><img src="../../../assets/instagram.png" alt="instagram"></a>
             <a href="https://github.com/Skamti" target="_blank"><img src="../../../assets/github.png" alt="github"></a>
             <a href="https://www.facebook.com/profile.php?id=1193895283" target="_blank"><img src="../../../assets/facebook.png" alt="facebook"></a>
-            <button type="button" class="btn btn-outline-light">INGRESO</button>       
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</button>      
         </div>
     </div>
 </div>
