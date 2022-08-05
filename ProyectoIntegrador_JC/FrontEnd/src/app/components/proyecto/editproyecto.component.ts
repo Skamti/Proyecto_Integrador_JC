@@ -10,9 +10,7 @@ import { ProyectoService } from 'src/app/service/proyecto.service';
 })
 export class EditproyectoComponent implements OnInit {
   proyecto: Proyecto = null;
-  constructor(
-    private proyectoS: ProyectoService, private activatedRouter: ActivatedRoute, private router: Router
-  ) { }
+  constructor(private proyectoS: ProyectoService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];

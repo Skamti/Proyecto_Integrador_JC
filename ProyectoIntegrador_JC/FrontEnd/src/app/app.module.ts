@@ -23,6 +23,8 @@ import { NeweducacionComponent } from './components/educacion/neweducacion.compo
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 import { NewproyectoComponent } from './components/proyecto/newproyecto.component';
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
+import { NewskillComponent } from './components/hys/newskill.component';
+import { EditskillComponent } from './components/hys/editskill.component';
 
 
 
@@ -48,6 +50,8 @@ import { EditproyectoComponent } from './components/proyecto/editproyecto.compon
     EditeducacionComponent,
     NewproyectoComponent,
     EditproyectoComponent,
+    NewskillComponent,
+    EditskillComponent,
     
   ],
   imports: [

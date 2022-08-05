@@ -13,12 +13,12 @@ public class Skill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String img;
-    private String progreso;
+    private int progreso;
 
     public Skill() {
     }
 
-    public Skill(String img, String progreso) {
+    public Skill(String img, int progreso) {
         this.img = img;
         this.progreso = progreso;
     }
@@ -39,11 +39,11 @@ public class Skill {
         this.img = img;
     }
 
-    public String getProgreso() {
+    public int getProgreso() {
         return progreso;
     }
 
-    public void setProgreso(String progreso) {
+    public void setProgreso(int progreso) {
         this.progreso = progreso;
     }
 
