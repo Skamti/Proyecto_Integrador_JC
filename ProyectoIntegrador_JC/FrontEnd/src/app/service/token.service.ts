@@ -46,7 +46,7 @@ export class TokenService {
   }
 
   public logOut():void {
-    window.sessionStorage.clear();
+    window.sessionStorage.removeItem(TOKEN_KEY);
   }
 
 }

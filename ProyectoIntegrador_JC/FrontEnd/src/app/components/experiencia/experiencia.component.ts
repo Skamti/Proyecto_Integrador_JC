@@ -14,6 +14,7 @@ export class ExperienciaComponent implements OnInit {
   constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
 
   isLogged = false;
+  /*isAdmin = false;*/
 
   ngOnInit(): void {
     this.cargarExperiencia();
@@ -22,6 +23,13 @@ export class ExperienciaComponent implements OnInit {
     } else {
       this.isLogged = false;
     }
+    /*this.tokenService.getAuthorities().forEach(function (rol){
+      if (rol == 'ROLE_ADMIN'){
+        this.isAdmin=true;
+      }
+    })*/
+    /*Arriba Esta el "check authorities" que no anda*/   
+    
   }
 
   cargarExperiencia(): void {
