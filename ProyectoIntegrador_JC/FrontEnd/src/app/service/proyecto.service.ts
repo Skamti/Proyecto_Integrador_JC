@@ -7,7 +7,7 @@ import { Proyecto } from '../model/proyecto';
   providedIn: 'root'
 })
 export class ProyectoService {
-  proURL= 'http://localhost:8080/proyecto/';
+  proURL= 'https://dry-shelf-43479.herokuapp.com/';
 
   constructor(private httpClient: HttpClient) { }
 

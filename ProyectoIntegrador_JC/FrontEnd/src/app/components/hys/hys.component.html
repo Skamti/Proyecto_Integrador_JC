@@ -1,11 +1,11 @@
 <div class="row">
     <h1>Hard & Soft skills</h1>
-    <div class="col-lg-1">
+    <div class="col-lg-12">
         <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">
-            <i class="bi bi-plus-square"></i>
+            <i class="bi bi-plus-square"> Agregar Skill</i>
         </button>
     </div>
-    <div class="text-center col-sm-4 col-md-3 col-lg-3" *ngFor="let Skill of skill">
+    <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let Skill of skill">
         <circle-progress
             [percent]="Skill.progreso"
             [radius]="100"
@@ -22,14 +22,13 @@
             [animation]="true"
             [animationDuration]="600"
             [lazy]="true"     
-        ></circle-progress> 
-        <div class="col-sm-4 col-md-2 col-lg-4" *ngIf="isLogged">
+        ></circle-progress>
+     
+        <div class="col-sm-4 col-md-2 col-lg-4 align-items-start flex-column" *ngIf="isLogged">
             <button class="btn btn-secondary" routerLink="/editskill/{{Skill.id}}">
                 <i class="bi bi-pencil-square"></i></button>
-            </div>
-        <div class="col-sm-4 col-md-2 col-lg-4" *ngIf="isLogged">
            <button class="btn btn-danger" (click)="delete(Skill.id)">
             <i class="bi bi-trash2-fill"></i></button>
-           </div>        
+        </div>        
     </div>             
 </div>
