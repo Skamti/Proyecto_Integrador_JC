@@ -10,7 +10,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = 'https://dry-shelf-43479.herokuapp.com/';
+  URL = 'https://dry-shelf-43479.herokuapp.com/personas/';
 
   constructor(private http: HttpClient) { }
 

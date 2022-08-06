@@ -7,7 +7,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL= 'https://dry-shelf-43479.herokuapp.com/';
+  URL= 'https://dry-shelf-43479.herokuapp.com/skill/';
 
   constructor(private httpClient: HttpClient) { }
 
