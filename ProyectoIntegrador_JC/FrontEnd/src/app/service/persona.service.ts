@@ -10,7 +10,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = 'https://jacappargpro.herokuapp.com/personas/';
+  URL = 'https://portfolio-argentina-programa-1.herokuapp.com/personas/';
 
   constructor(private http: HttpClient) { }
 

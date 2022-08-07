@@ -17,7 +17,7 @@ public class JacApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("https://javiercarrere-5d3d9.web.app").allowedMethods("*").allowedHeaders("*");
+				registry.addMapping("**").allowedOrigins("https://javiercarrere-5d3d9.web.app").allowedMethods("*").allowedHeaders("*");
 			}
 		};
 	}
