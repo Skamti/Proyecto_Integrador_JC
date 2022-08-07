@@ -10,7 +10,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = 'https://dry-shelf-43479.herokuapp.com/personas/';
+  URL = 'https://jacappargpro.herokuapp.com/personas/';
 
   constructor(private http: HttpClient) { }
 
@@ -19,5 +19,3 @@ export class PersonaService {
   }
 }
 
-//2.54.50 video
-//2.38.50 tiene persona.service.ts

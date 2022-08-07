@@ -13,12 +13,12 @@ public class JacApplication {
 		SpringApplication.run(JacApplication.class, args);
 	}
         @Bean
-        public WebMvcConfigurer corsConfigurer() {
-	return new WebMvcConfigurer() {
-		@Override
-		public void addCorsMappings(CorsRegistry registry) {
-			registry.addMapping("/**").allowedOrigins("http://localhost:4200");
-		}
-	};
-}
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer() {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+				registry.addMapping("/**").allowedOrigins("https://javiercarrere-5d3d9.web.app").allowedMethods("*").allowedHeaders("*");
+			}
+		};
+	}
 }
