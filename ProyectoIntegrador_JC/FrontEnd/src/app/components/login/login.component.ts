@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
         this.isLogginFail = true;
         this.errMsj = err.error.mensaje;
         console.log(this.errMsj);
-        
+        alert("Un campo ingresado fue erroneo, por favor vuelva a ingresar usuario y contraseña");        
       })
   }
 

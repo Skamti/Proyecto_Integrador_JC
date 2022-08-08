@@ -1,86 +1,35 @@
-.row{
-    padding: 20px;
+.row {
+  padding: 20px;
 }
-div{
-    background-color:#a1b5cb;
-    text-align:center;
+div {
+  background-color: #a1b5cb;
+  text-align: center;
 }
 /*Estilo de la foto de perfil*/
 
-@media(min-width:576px){
-    #fotodeperfil{
-        position: absolute;
-        width: 15%;
-        border-radius:100%;
-        box-shadow: 3px 3px 3px grey;
-        left:3%;
-        top:650px;
-    }
+@media (min-width: 576px) {
+  #fotodeperfil {
+    position: relative;
+    width: 200px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 15%;
+    top: -60%;
+  }
 }
-@media(max-width:575px){
-    #fotodeperfil{
-        position: absolute;
-        width: 30%;
-        border-radius:100%;
-        box-shadow: 3px 3px 3px grey;
-        left:34%;
-        top:950px;
-    }
-}
-@media(max-width:409px){
-    #fotodeperfil{
-        position: absolute;
-        width: 30%;
-        border-radius:100%;
-        box-shadow: 3px 3px 3px grey;
-        left:34%;
-        top:700px;
-    }
-}
-@media(max-width:259px){
-    #fotodeperfil{
-        position: absolute;
-        width: 30%;
-        border-radius:100%;
-        box-shadow: 3px 3px 3px grey;
-        left:34%;
-        top:780px;
-    }    
-}
-@media(max-width:150px){
-    #fotodeperfil{
-        position: absolute;
-        width: 30%;
-        border-radius:100%;
-        box-shadow: 3px 3px 3px grey;
-        left:34%;
-        top: 850px;
-    }    
-}
-@media(min-width:1550px){
-    #fotodeperfil{
-        position: absolute;
-        width: 15%;
-        border-radius:100%;
-        box-shadow: 3px 3px 3px grey;
-        left:3%;
-        top:600px;
-    }    
-}
-@media(min-width:1850px){
-    #fotodeperfil{
-        position: absolute;
-        width: 15%;
-        border-radius:100%;
-        box-shadow: 3px 3px 3px grey;
-        left:3%;
-        top:500px;
-    }    
+@media (max-width: 575px) {
+  #fotodeperfil {
+    position: relative;
+    width: 30%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    top: -60%;
+  }
 }
 
 /*Etiqueta de nombre*/
-#nombre{
-    font-weight: bold;
-    margin-top: 10%;
-   
+#nombre {
+  font-weight: bold;
+  margin-top: 10%;
+  font-size:20px;
 }
