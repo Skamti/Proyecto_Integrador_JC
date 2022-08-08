@@ -23,12 +23,7 @@ export class ExperienciaComponent implements OnInit {
     } else {
       this.isLogged = false;
     }
-    /*this.tokenService.getAuthorities().forEach(function (rol){
-      if (rol == 'ROLE_ADMIN'){
-        this.isAdmin=true;
-      }
-    })*/
-    /*Arriba Esta el "check authorities" que no anda*/   
+    
     
   }
 
