@@ -20,6 +20,7 @@ img{
 @media(max-width: 575px){
     .container{
         flex-direction: column;
+        display: flex;
     }
     .redes{
         display:flex;

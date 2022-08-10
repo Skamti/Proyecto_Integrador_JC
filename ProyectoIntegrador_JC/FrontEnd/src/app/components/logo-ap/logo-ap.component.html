@@ -1,17 +1,49 @@
 <div class="row">
-    <div class="container">
-        <div class="logo">
-            <img src="../../../assets/APLogo.png" alt="AP logo" id="logoAP">
-        </div>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/javier-carrere-696733112/" target="_blank"><img src="../../../assets/linkedin.png" alt="linkedin"></a>
-            <a href="https://twitter.com/Skamti_1" target="_blank"><img src="../../../assets/twitter.png"  alt="twitter"></a>
-            <a href="https://www.instagram.com/javier.carrere" target="_blank"><img src="../../../assets/instagram.png" alt="instagram"></a>
-            <a href="https://github.com/Skamti" target="_blank"><img src="../../../assets/github.png" alt="github"></a>
-            <a href="https://www.facebook.com/profile.php?id=1193895283" target="_blank"><img src="../../../assets/facebook.png" alt="facebook"></a>
-            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
-            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</button>      
-        </div>
+  <div class="container">
+    <div class="logo">
+      <img src="../../../assets/APLogo.png" alt="AP logo" id="logoAP" />
+      <a
+        href="https://drive.google.com/file/d/1xQ79tL1da9EDmvDKa1IM_EPN1vDHACg_/view?usp=sharing"
+        target="_blank"
+        ><button type="button" class="btn btn-outline-info">Ver CV</button></a
+      >
     </div>
+    <div class="redes">
+      <a
+        href="https://www.linkedin.com/in/javier-carrere-696733112/"
+        target="_blank"
+        ><img src="../../../assets/linkedin.png" alt="linkedin"
+      /></a>
+      <a href="https://twitter.com/Skamti_1" target="_blank"
+        ><img src="../../../assets/twitter.png" alt="twitter"
+      /></a>
+      <a href="https://www.instagram.com/javier.carrere" target="_blank"
+        ><img src="../../../assets/instagram.png" alt="instagram"
+      /></a>
+      <a href="https://github.com/Skamti" target="_blank"
+        ><img src="../../../assets/github.png" alt="github"
+      /></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=1193895283"
+        target="_blank"
+        ><img src="../../../assets/facebook.png" alt="facebook"
+      /></a>
+      <button
+        type="button"
+        class="btn btn-outline-light"
+        (click)="login()"
+        *ngIf="!isLogged"
+      >
+        Ingresar
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-light"
+        (click)="onLogOut()"
+        *ngIf="isLogged"
+      >
+        Cerrar Sesion
+      </button>
+    </div>
+  </div>
 </div>
-
