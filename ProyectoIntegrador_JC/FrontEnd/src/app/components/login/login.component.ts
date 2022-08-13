@@ -21,6 +21,10 @@ export class LoginComponent implements OnInit {
 
   constructor(private tokenService: TokenService, private authService: AuthService, private router: Router) { }
 
+  /**
+   * If the user is logged in, then the user is logged in, and the user's roles are set to the user's
+   * roles
+   */
   ngOnInit(): void {
     if(this.tokenService.getToken()){
       this.isLogged = true;
@@ -29,6 +33,12 @@ export class LoginComponent implements OnInit {
     }
   }
 
+  /* The above code is a method that is called when the user clicks the login button. It creates a new
+  LoginUsuario object with the username and password that the user entered. Then it calls the login
+  method of the authService and subscribes to the response. If the response is successful, it sets
+  the isLogged and isLogginFail variables to true and false respectively. It also sets the token,
+  username, and authorities in the tokenService. It then navigates to the home page. If the response
+  is not successful, it sets the isLogged and isLogginFail variables */
   onLogin(): void{
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
     this.authService.login(this.loginUsuario).subscribe(data =>{

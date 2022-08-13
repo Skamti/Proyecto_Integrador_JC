@@ -1,1 +1,15 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+/*{
+    box-sizing: border-box;
+    outline: 2px solid limegreen !important;
+    
+   
+}*/
+html,body{
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+}
