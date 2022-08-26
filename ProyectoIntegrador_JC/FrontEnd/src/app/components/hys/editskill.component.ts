@@ -24,6 +24,7 @@ export class EditskillComponent implements OnInit {
     )
   }
 
+
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.sSkill.update(id, this.skill).subscribe(

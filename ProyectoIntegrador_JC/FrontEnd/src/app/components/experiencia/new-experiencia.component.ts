@@ -16,6 +16,9 @@ export class NewExperienciaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * It creates a new experience and saves it in the database.
+   */
   onCreate():void{
     const expe = new Experiencia(this.nombreE, this.descripcionE);
     this.sExperiencia.save(expe).subscribe(
